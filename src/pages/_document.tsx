@@ -1,11 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
-// import { getCssText } from "../styles";
+import { getCssText } from "@rbeiro-ui/stitches-config";
 
 export default function Document() {
   return (
     <Html>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <title>Memberflix</title>
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -18,7 +19,7 @@ export default function Document() {
 
         <style
           id="stitches"
-          // dangerouslySetInnerHTML={{ __html: getCssText() }}
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
         />
       </Head>
       <body>

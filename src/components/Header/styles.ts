@@ -1,8 +1,13 @@
-import { styled } from "../../styles";
+import { styled } from "@rbeiro-ui/stitches-config";
 
 export const HeaderContainer = styled("header", {
-  padding: "$4",
-  borderRadius: "$md",
-  backgroundColor: "$gray800",
-  border: "1px solid $gray600",
+  width: "100%",
+  maxWidth: 1120,
+  margin: "0 auto",
+});
+
+export const ContentContainer = styled("div", {
+  display: "flex",
+  justifyContent: "space-between",
+  padding: "$5 0",
 });
